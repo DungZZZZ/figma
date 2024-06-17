@@ -1,0 +1,549 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    padding: 10px 0;
+    border-bottom: 2px solid #007bff; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-list li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-weight: bold;
+}
+
+.nav-list li .contact-btn{
+    color: white;
+}
+
+.nav-list li a:hover {
+    background-color: #e6e6e6;
+}
+
+.nav-list li .fas {
+    margin-left: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: calc(100% + 2px);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.contact-btn {
+    background-color: #062d56;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: black;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.8em;
+    margin: 0 0 10px;
+}
+
+.hero-text p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.9em;
+    margin: 0 0 15px;
+}
+
+.hero-text button {
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: #05488f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.hero-navigation .pagination {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 3px; 
+}
+
+.hero-navigation .pagination span {
+    font-size: 0.8em;
+}
+
+.hero-navigation .arrows {
+    display: flex;
+    align-items: center;
+    gap: 0.1px; 
+    margin-right: 2px; 
+}
+
+.hero-navigation .arrows button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2em;
+    color: black;
+}
+
+/* Sepsis Section */
+
+.sepsis {
+    background-color: #01418a;
+    color: white;
+    padding: 40px 0;
+}
+ 
+.sepsis .upper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 11%; 
+}
+
+.sepsis .upper-container p {
+    font-size: 15px;
+    max-width: 900px; 
+    margin-top: 20px; 
+}
+
+.sepsis h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.sepsis p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 600px;
+}
+
+.read-more a {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: -20px;
+    margin-right: 80px;
+}
+
+.career-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap; 
+    gap: 20px; 
+    max-width: 1100px; 
+    margin: 0 auto;
+}
+
+.career-options .option {
+    background-color: white;
+    color: black;
+    padding: 0;
+    border-radius: 5px;
+    flex: 1; 
+    text-align: left;
+    box-shadow: 0 4px 32px 17px rgba(0, 0, 0, 0.02); 
+    min-width: 220px; 
+    max-width: 250px; 
+    height: 380px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.career-options .option img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 0; 
+}
+
+.career-options .option h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 20px 20px 10px; 
+    text-transform: uppercase;
+}
+
+.career-options .option p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 13px; 
+    line-height: 20px; 
+    margin: 0 20px 10px; 
+    flex-grow: 1;
+}
+
+.career-options .option a {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #003d87;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 20px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.career-options .option a::after {
+    content: ' \2192';
+    margin-left: 5px; 
+}
+
+
+.about {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about .image-container {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.about .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.about-content {
+    width: 50%;
+    margin-left: 70px;
+    text-align: left;
+}
+
+.about-content h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #02458d;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+.about-content h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+}
+
+.about-content p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+}
+
+.about-content button {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #02458d;
+    background: none;
+    border: 2px solid #02458d;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.about-content button:hover {
+    background-color: #02458d;
+    color: white;
+}
+
+
+.cta-wrapper {
+    background: linear-gradient(to bottom, white 60%, rgb(230, 230, 230) 40%);
+    padding: 20px;
+}
+
+.cta {
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: rgb(0, 60, 143);
+    color: white;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.cta-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cta-left {
+    width: 30%; 
+    padding-right: 50px; 
+    margin-top: 1px;
+}
+
+.cta-left h2 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.cta-right {
+    width: 70%; 
+    margin-top: 30px;
+}
+
+.accordion {
+    text-align: left; 
+}
+
+.accordion-item {
+    background-color: #003366;
+    color: black;
+    margin-bottom: 10px;
+    border: none; 
+    overflow: hidden; 
+}
+
+.accordion-header {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    background-color: #1986dfb3;
+    padding: 15px 20px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s ease; 
+}
+
+.accordion-header.active,
+.accordion-header:hover {
+    background-color: white;
+    color: rgb(4, 84, 196);
+}
+
+.accordion-icon {
+    font-size: 25px;
+}
+
+.accordion-content {
+    padding: 10px 20px;
+    display: none;
+    background-color: #fff;
+    border-top: 1px solid #e6e6e6; 
+}
+
+.accordion-content p {
+    margin: 0;
+}
+
+
+.footer {
+    background-color: rgb(230, 230, 230); 
+    padding: 40px 0;
+    text-align: left;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px; 
+    width: 100%;
+}
+
+.footer-frame {
+    flex: 1;
+    min-width: 200px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.footer-frame h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-bottom: 15px;
+    color: #003d87;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.footer-frame a {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: rgba(0, 0, 0, 0.545);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-frame p {
+    color: rgba(0, 0, 0, 0.545);
+    margin-bottom: 10px;
+}
+
+.footer-frame .social-links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.footer-frame .social-links a {
+    background-color: white;
+    border: none; 
+    padding: 5px;
+    color: black;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.footer-bottom {
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px; 
+    width: 100%;
+    margin-top: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.footer-bottom .left,
+.footer-bottom .right {
+    flex: 1;
+}
+
+.footer-bottom .left p,
+.footer-bottom .right p {
+    margin: 0;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.footer-bottom .right {
+    text-align: right;
+}
+
+.footer-bottom .website-design {
+    margin-top: 10px;
+}
+
+.footer-bottom .left a,
+.footer-bottom .right a {
+    color:black;
+    text-decoration: none;
+}
